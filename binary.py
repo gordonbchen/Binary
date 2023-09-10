@@ -21,7 +21,7 @@ def decimal_to_binary(decimal: int, bits: int = 8) -> str:
     """Convert decimal int into binary str."""
     binary = ""
     for i in range(bits):
-        val = 2 ** (bits - i)
+        val = 2 ** (bits - i - 1)
 
         if i == 0 and decimal < 0:
             binary += "1"
